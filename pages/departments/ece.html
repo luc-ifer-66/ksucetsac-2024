@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Textbooks - KSU 2024 Scheme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../pages.css">
+    <style>
+        /* Custom scrollbar style - simple blue line */
+        .scrollable-list::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+        .scrollable-list::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .scrollable-list::-webkit-scrollbar-thumb {
+            background-color: #0066cc;
+            border-radius: 2px;
+        }
+        
+        /* For Firefox */
+        .scrollable-list {
+            scrollbar-width: thin;
+            scrollbar-color: #0066cc transparent;
+        }
+
+        /* Mobile responsiveness improvements */
+        @media (max-width: 768px) {
+            .semester-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .semester-card {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            
+            .textbook-list {
+                padding-left: 1rem;
+            }
+            
+            .textbook-list li {
+                margin-bottom: 0.5rem;
+            }
+            
+            .page-header h1 {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+            
+            .page-header p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-images">
+                    <img src="../../images/ksu logo.png" alt="KSU Logo" class="logo-image logo-ksu">
+                    <img src="../../images/ksu logo white.png" alt="KSU Logo" class="logo-image logo-ksu-dark">
+                </div>
+                <a href="../../index.html">KSU Student Assist Cell</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../notes.html">Notes</a></li>
+                <li><a href="../question-papers.html">Question Papers</a></li>
+                <li><a href="../syllabus.html">Syllabus</a></li>
+                <li><a href="../faq.html">FAQ</a></li>                
+                <li><a href="../lectures.html">Lectures</a></li>
+            </ul>
+            <div class="theme-toggle-container">
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="page-header">
+            <h1>Electronics and Communication Engineering Textbooks</h1>
+            <p>Access scanned and reference textbooks for ECE department.</p>
+            <p><a href="../textbooks.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Departments</a></p>
+        </section>
+
+        <div class="textbook-container">
+            <div class="semester-grid">
+                <div class="semester-card">
+                    <h2>Semester 1</h2>
+                    <div class="scrollable-list">
+                        <ul class="textbook-list">
+                            <li><a href="#">Engineering Mathematics I</a></li>
+                            <li><a href="#">Engineering Physics</a></li>
+                            <li><a href="#">Engineering Chemistry</a></li>
+                            <li><a href="#">Engineering Graphics</a></li>
+                            <li><a href="#">Introduction to Electronics Engineering</a></li>
+                            <li><a href="#">Basic Civil Engineering</a></li>
+                            <li><a href="#">Basic Mechanical Engineering</a></li>
+                            <li><a href="#">Professional Communication</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="semester-card">
+                    <h2>Semester 2</h2>
+                    <div class="scrollable-list">
+                        <ul class="textbook-list">
+                            <li><a href="#">Engineering Mathematics II</a></li>
+                            <li><a href="#">Programming in C</a></li>
+                            <li><a href="#">Environmental Studies</a></li>
+                            <li><a href="#">Mechanics</a></li>
+                            <li><a href="#">Basic Electrical Engineering</a></li>
+                            <li><a href="#">Physics Lab</a></li>
+                            <li><a href="#">Chemistry Lab</a></li>
+                            <li><a href="#">Programming Lab</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="semester-card">
+                    <h2>Semester 3</h2>
+                    <div class="scrollable-list">
+                        <ul class="textbook-list">
+                            <li><a href="#">Linear Algebra & Complex Analysis</a></li>
+                            <li><a href="#">Electronic Circuits</a></li>
+                            <li><a href="#">Solid State Devices</a></li>
+                            <li><a href="#">Digital System Design</a></li>
+                            <li><a href="#">Network Theory</a></li>
+                            <li><a href="#">Electronic Circuits Lab</a></li>
+                            <li><a href="#">Digital System Design Lab</a></li>
+                            <li><a href="#">Programming Lab</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="semester-card">
+                    <h2>Semester 4</h2>
+                    <div class="scrollable-list">
+                        <ul class="textbook-list">
+                            <li><a href="#">Probability, Statistics & Numerical Methods</a></li>
+                            <li><a href="#">Signals and Systems</a></li>
+                            <li><a href="#">Analog Communication</a></li>
+                            <li><a href="#">Computer Architecture & Organization</a></li>
+                            <li><a href="#">Electromagnetic Theory</a></li>
+                            <li><a href="#">Signals and Systems Lab</a></li>
+                            <li><a href="#">Communication Lab</a></li>
+                            <li><a href="#">Computer Architecture Lab</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="semester-card">
+                    <h2>Semester 5</h2>
+                    <div class="scrollable-list">
+                        <ul class="textbook-list">
+                            <li><a href="#">Digital Communication</a></li>
+                            <li><a href="#">Microprocessors & Microcontrollers</a></li>
+                            <li><a href="#">Control Systems</a></li>
+                            <li><a href="#">Digital Signal Processing</a></li>
+                            <li><a href="#">VLSI Design</a></li>
+                            <li><a href="#">Communication Systems Lab</a></li>
+                            <li><a href="#">Microprocessors Lab</a></li>
+                            <li><a href="#">DSP Lab</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="semester-card">
+                    <h2>Semester 6</h2>
+                    <div class="scrollable-list">
+                        <ul class="textbook-list">
+                            <li><a href="#">Antenna & Wave Propagation</a></li>
+                            <li><a href="#">Microwave Engineering</a></li>
+                            <li><a href="#">Optical Communication</a></li>
+                            <li><a href="#">Information Theory & Coding</a></li>
+                            <li><a href="#">Professional Ethics</a></li>
+                            <li><a href="#">Microwave & Antenna Lab</a></li>
+                            <li><a href="#">Optical Communication Lab</a></li>
+                            <li><a href="#">Mini Project</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="semester-card">
+                    <h2>Semester 7</h2>
+                    <div class="scrollable-list">
+                        <ul class="textbook-list">
+                            <li><a href="#">Computer Communication Networks</a></li>
+                            <li><a href="#">Embedded Systems</a></li>
+                            <li><a href="#">Wireless Communication</a></li>
+                            <li><a href="#">Elective I</a></li>
+                            <li><a href="#">Elective II</a></li>
+                            <li><a href="#">Networks Lab</a></li>
+                            <li><a href="#">Embedded Systems Lab</a></li>
+                            <li><a href="#">Project Phase I</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="semester-card">
+                    <h2>Semester 8</h2>
+                    <div class="scrollable-list">
+                        <ul class="textbook-list">
+                            <li><a href="#">CMOS Design</a></li>
+                            <li><a href="#">Satellite Communication</a></li>
+                            <li><a href="#">Elective III</a></li>
+                            <li><a href="#">Elective IV</a></li>
+                            <li><a href="#">Project Work</a></li>
+                            <li><a href="#">Seminar</a></li>
+                            <li><a href="#">Industrial Training</a></li>
+                            <li><a href="#">Technical Paper Writing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; KSU CET 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html> 

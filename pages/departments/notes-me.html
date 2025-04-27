@@ -77,13 +77,44 @@
             scrollbar-width: thin;
             scrollbar-color: #0066cc transparent;
         }
-        /* Mobile responsiveness improvements */
+        
+        /* Coming soon styling */
+        .coming-soon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .coming-soon i {
+            font-size: 2rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        
+        /* Mobile semester cards layout */
         @media (max-width: 768px) {
             .semester-grid {
-                display: flex;
-                flex-direction: column;
+                display: flex !important;
+                flex-direction: column !important;
                 gap: 1rem;
             }
+            
+            .semester-card {
+                width: 100%;
+                height: auto !important;
+                min-height: 300px;
+                margin-bottom: 1rem;
+            }
+        }
             
             .semester-card {
                 width: 100%;
@@ -106,7 +137,7 @@
             .page-header p {
                 font-size: 0.9rem;
             }
-        }
+        
         
         .textbook-list {
             list-style: none;
@@ -224,16 +255,10 @@
             <div class="semester-card">
                 <h2>Semester 3</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Linear Algebra & Complex Analysis</a></li>
-                        <li><a href="#">Solid Mechanics</a></li>
-                        <li><a href="#">Fluid Mechanics</a></li>
-                        <li><a href="#">Thermodynamics</a></li>
-                        <li><a href="#">Metallurgy and Materials Engineering</a></li>
-                        <li><a href="#">Manufacturing Processes</a></li>
-                        <li><a href="#">Mechanical Engineering Lab I</a></li>
-                        <li><a href="#">Computer-Aided Engineering Graphics</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -241,16 +266,10 @@
             <div class="semester-card">
                 <h2>Semester 4</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Probability, Statistics and Numerical Methods</a></li>
-                        <li><a href="#">Applied Thermodynamics</a></li>
-                        <li><a href="#">Mechanics of Machinery</a></li>
-                        <li><a href="#">Machine Tools and Machining</a></li>
-                        <li><a href="#">Advanced Mechanics of Solids</a></li>
-                        <li><a href="#">Heat Transfer</a></li>
-                        <li><a href="#">Manufacturing Technology Lab</a></li>
-                        <li><a href="#">Fluid Mechanics Lab</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -258,16 +277,10 @@
             <div class="semester-card">
                 <h2>Semester 5</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Metrology and Instrumentation</a></li>
-                        <li><a href="#">Dynamics of Machinery</a></li>
-                        <li><a href="#">Advanced Manufacturing Technology</a></li>
-                        <li><a href="#">Refrigeration and Air Conditioning</a></li>
-                        <li><a href="#">Automobile Engineering</a></li>
-                        <li><a href="#">Disaster Management</a></li>
-                        <li><a href="#">Machine Design Lab</a></li>
-                        <li><a href="#">Heat Transfer Lab</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -275,16 +288,10 @@
             <div class="semester-card">
                 <h2>Semester 6</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Computer-Aided Design</a></li>
-                        <li><a href="#">Design of Machine Elements</a></li>
-                        <li><a href="#">IC Engines and Gas Turbines</a></li>
-                        <li><a href="#">Industrial Engineering</a></li>
-                        <li><a href="#">Mechatronics</a></li>
-                        <li><a href="#">Constitution of India</a></li>
-                        <li><a href="#">CAD/CAM Lab</a></li>
-                        <li><a href="#">IC Engines Lab</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -292,16 +299,10 @@
             <div class="semester-card">
                 <h2>Semester 7</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Energy Conservation and Management</a></li>
-                        <li><a href="#">Hydraulic Machines</a></li>
-                        <li><a href="#">Operations Research</a></li>
-                        <li><a href="#">Advanced Manufacturing Systems</a></li>
-                        <li><a href="#">Elective I</a></li>
-                        <li><a href="#">Elective II</a></li>
-                        <li><a href="#">Mechanical Measurements Lab</a></li>
-                        <li><a href="#">Project Design</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -309,16 +310,10 @@
             <div class="semester-card">
                 <h2>Semester 8</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Elective III</a></li>
-                        <li><a href="#">Elective IV</a></li>
-                        <li><a href="#">Elective V</a></li>
-                        <li><a href="#">Project Work</a></li>
-                        <li><a href="#">Seminar</a></li>
-                        <li><a href="#">Technical Writing</a></li>
-                        <li><a href="#">Industrial Training</a></li>
-                        <li><a href="#">Professional Ethics</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -331,3 +326,5 @@
     <script src="../../script.js"></script>
 </body>
 </html> 
+
+

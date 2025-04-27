@@ -30,14 +30,45 @@
             scrollbar-width: thin;
             scrollbar-color: #0066cc transparent;
         }
-
-        /* Mobile responsiveness improvements */
+        
+        /* Mobile semester cards layout */
         @media (max-width: 768px) {
             .semester-grid {
-                display: flex;
-                flex-direction: column;
+                display: flex !important;
+                flex-direction: column !important;
                 gap: 1rem;
             }
+            
+            .semester-card {
+                width: 100%;
+                height: auto !important;
+                min-height: 300px;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        /* Coming soon styling */
+        .coming-soon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .coming-soon i {
+            font-size: 2rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
             
             .semester-card {
                 width: 100%;
@@ -60,7 +91,7 @@
             .page-header p {
                 font-size: 0.9rem;
             }
-        }
+        
     </style>
 </head>
 <body>
@@ -138,96 +169,60 @@
                 <div class="semester-card">
                     <h2>Semester 3</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Linear Algebra & Complex Analysis</a></li>
-                            <li><a href="#">Data Structures</a></li>
-                            <li><a href="#">Electric Circuit Analysis</a></li>
-                            <li><a href="#">Digital System Design</a></li>
-                            <li><a href="#">Object Oriented Programming</a></li>
-                            <li><a href="#">Data Structures Lab</a></li>
-                            <li><a href="#">Circuits Lab</a></li>
-                            <li><a href="#">OOP Lab</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 4</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Probability, Statistics & Numerical Methods</a></li>
-                            <li><a href="#">Computer Organization & Architecture</a></li>
-                            <li><a href="#">Signals and Systems</a></li>
-                            <li><a href="#">Electromagnetic Theory</a></li>
-                            <li><a href="#">Design & Analysis of Algorithms</a></li>
-                            <li><a href="#">COA Lab</a></li>
-                            <li><a href="#">Signals & Systems Lab</a></li>
-                            <li><a href="#">Algorithms Lab</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 5</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Microprocessors & Microcontrollers</a></li>
-                            <li><a href="#">Control Systems</a></li>
-                            <li><a href="#">Operating Systems</a></li>
-                            <li><a href="#">Database Management Systems</a></li>
-                            <li><a href="#">Electronic Circuits</a></li>
-                            <li><a href="#">Microprocessors Lab</a></li>
-                            <li><a href="#">OS Lab</a></li>
-                            <li><a href="#">DBMS Lab</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 6</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Computer Networks</a></li>
-                            <li><a href="#">Digital Signal Processing</a></li>
-                            <li><a href="#">Power Electronics</a></li>
-                            <li><a href="#">Software Engineering</a></li>
-                            <li><a href="#">Professional Ethics</a></li>
-                            <li><a href="#">Networks Lab</a></li>
-                            <li><a href="#">DSP Lab</a></li>
-                            <li><a href="#">Mini Project</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 7</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Embedded Systems</a></li>
-                            <li><a href="#">Power System Engineering</a></li>
-                            <li><a href="#">Internet of Things</a></li>
-                            <li><a href="#">Elective I</a></li>
-                            <li><a href="#">Elective II</a></li>
-                            <li><a href="#">Embedded Systems Lab</a></li>
-                            <li><a href="#">IoT Lab</a></li>
-                            <li><a href="#">Project Phase I</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 8</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Distributed Systems</a></li>
-                            <li><a href="#">VLSI Design</a></li>
-                            <li><a href="#">Elective III</a></li>
-                            <li><a href="#">Elective IV</a></li>
-                            <li><a href="#">Project Work</a></li>
-                            <li><a href="#">Seminar</a></li>
-                            <li><a href="#">Industrial Training</a></li>
-                            <li><a href="#">Comprehensive Viva-Voce</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,3 +236,4 @@
     <script src="../../script.js"></script>
 </body>
 </html> 
+

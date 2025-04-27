@@ -78,35 +78,65 @@
             scrollbar-width: thin;
             scrollbar-color: #0066cc transparent;
         }
-        /* Mobile responsiveness improvements */
+        
+        /* Coming soon styling */
+        .coming-soon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .coming-soon i {
+            font-size: 2rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        
+        /* Mobile semester cards layout */
         @media (max-width: 768px) {
             .semester-grid {
-                display: flex;
-                flex-direction: column;
+                display: flex !important;
+                flex-direction: column !important;
                 gap: 1rem;
             }
             
             .semester-card {
                 width: 100%;
+                height: auto !important;
+                min-height: 300px;
                 margin-bottom: 1rem;
             }
+        }
             
-            .textbook-list {
-                padding-left: 1rem;
-            }
-            
-            .textbook-list li {
-                margin-bottom: 0.5rem;
-            }
-            
-            .page-header h1 {
-                font-size: 1.5rem;
-                line-height: 1.3;
-            }
-            
-            .page-header p {
-                font-size: 0.9rem;
-            }
+        .semester-card {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        
+        .textbook-list {
+            padding-left: 1rem;
+        }
+        
+        .textbook-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .page-header h1 {
+            font-size: 1.5rem;
+            line-height: 1.3;
+        }
+        
+        .page-header p {
+            font-size: 0.9rem;
         }
         
         .textbook-list {
@@ -225,16 +255,10 @@
             <div class="semester-card">
                 <h2>Semester 3</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Linear Algebra & Complex Analysis</a></li>
-                        <li><a href="#">Discrete Computational Structures</a></li>
-                        <li><a href="#">Digital System Design</a></li>
-                        <li><a href="#">Data Structures</a></li>
-                        <li><a href="#">Object Oriented Programming</a></li>
-                        <li><a href="#">Principles of Database Design</a></li>
-                        <li><a href="#">Data Structures Lab</a></li>
-                        <li><a href="#">Object Oriented Programming Lab</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -242,16 +266,10 @@
             <div class="semester-card">
                 <h2>Semester 4</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Probability, Statistics and Numerical Methods</a></li>
-                        <li><a href="#">Computer Organization and Architecture</a></li>
-                        <li><a href="#">Operating Systems</a></li>
-                        <li><a href="#">Algorithm Analysis and Design</a></li>
-                        <li><a href="#">Database Management Systems</a></li>
-                        <li><a href="#">Software Engineering</a></li>
-                        <li><a href="#">Operating Systems Lab</a></li>
-                        <li><a href="#">Database Management Systems Lab</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -259,16 +277,10 @@
             <div class="semester-card">
                 <h2>Semester 5</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">System Software</a></li>
-                        <li><a href="#">Microprocessors and Microcontrollers</a></li>
-                        <li><a href="#">Data Communication</a></li>
-                        <li><a href="#">Computer Networks</a></li>
-                        <li><a href="#">Theory of Computation</a></li>
-                        <li><a href="#">Disaster Management</a></li>
-                        <li><a href="#">System Software Lab</a></li>
-                        <li><a href="#">Microprocessors Lab</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -276,16 +288,10 @@
             <div class="semester-card">
                 <h2>Semester 6</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Compiler Design</a></li>
-                        <li><a href="#">Web Technologies</a></li>
-                        <li><a href="#">Computer Graphics and Image Processing</a></li>
-                        <li><a href="#">Design and Analysis of Algorithms</a></li>
-                        <li><a href="#">Artificial Intelligence</a></li>
-                        <li><a href="#">Constitution of India</a></li>
-                        <li><a href="#">Compiler Design Lab</a></li>
-                        <li><a href="#">Web Technologies Lab</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -293,16 +299,10 @@
             <div class="semester-card">
                 <h2>Semester 7</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Cryptography and Network Security</a></li>
-                        <li><a href="#">Machine Learning</a></li>
-                        <li><a href="#">Distributed Systems</a></li>
-                        <li><a href="#">Software Architecture and Design Patterns</a></li>
-                        <li><a href="#">Elective I</a></li>
-                        <li><a href="#">Elective II</a></li>
-                        <li><a href="#">Security Lab</a></li>
-                        <li><a href="#">Project Design</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
             
@@ -310,16 +310,10 @@
             <div class="semester-card">
                 <h2>Semester 8</h2>
                 <div class="scrollable-list">
-                    <ul class="textbook-list">
-                        <li><a href="#">Elective III</a></li>
-                        <li><a href="#">Elective IV</a></li>
-                        <li><a href="#">Elective V</a></li>
-                        <li><a href="#">Project Work</a></li>
-                        <li><a href="#">Seminar</a></li>
-                        <li><a href="#">Technical Writing</a></li>
-                        <li><a href="#">Industrial Training</a></li>
-                        <li><a href="#">Professional Ethics</a></li>
-                    </ul>
+                    <div class="coming-soon">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Coming soon</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -332,3 +326,5 @@
     <script src="../../script.js"></script>
 </body>
 </html> 
+
+

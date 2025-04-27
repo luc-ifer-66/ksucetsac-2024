@@ -30,14 +30,45 @@
             scrollbar-width: thin;
             scrollbar-color: #0066cc transparent;
         }
-
-        /* Mobile responsiveness improvements */
+        
+        /* Mobile semester cards layout */
         @media (max-width: 768px) {
             .semester-grid {
-                display: flex;
-                flex-direction: column;
+                display: flex !important;
+                flex-direction: column !important;
                 gap: 1rem;
             }
+            
+            .semester-card {
+                width: 100%;
+                height: auto !important;
+                min-height: 300px;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        /* Coming soon styling */
+        .coming-soon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .coming-soon i {
+            font-size: 2rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
             
             .semester-card {
                 width: 100%;
@@ -60,7 +91,7 @@
             .page-header p {
                 font-size: 0.9rem;
             }
-        }
+        
     </style>
 </head>
 <body>
@@ -138,96 +169,60 @@
                 <div class="semester-card">
                     <h2>Semester 3</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Linear Algebra & Complex Analysis</a></li>
-                            <li><a href="#">Operations Research</a></li>
-                            <li><a href="#">Manufacturing Processes</a></li>
-                            <li><a href="#">Material Science</a></li>
-                            <li><a href="#">Thermodynamics</a></li>
-                            <li><a href="#">Manufacturing Lab</a></li>
-                            <li><a href="#">Material Testing Lab</a></li>
-                            <li><a href="#">Industrial Training I</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 4</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Probability, Statistics & Numerical Methods</a></li>
-                            <li><a href="#">Industrial Management</a></li>
-                            <li><a href="#">Production Planning and Control</a></li>
-                            <li><a href="#">Engineering Economics</a></li>
-                            <li><a href="#">Machine Tools and Metrology</a></li>
-                            <li><a href="#">Metrology Lab</a></li>
-                            <li><a href="#">Machine Tools Lab</a></li>
-                            <li><a href="#">Computer Applications Lab</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 5</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Quality Engineering</a></li>
-                            <li><a href="#">Ergonomics and Work Study</a></li>
-                            <li><a href="#">Supply Chain Management</a></li>
-                            <li><a href="#">Computer Integrated Manufacturing</a></li>
-                            <li><a href="#">Database Management Systems</a></li>
-                            <li><a href="#">Quality Control Lab</a></li>
-                            <li><a href="#">Ergonomics Lab</a></li>
-                            <li><a href="#">DBMS Lab</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 6</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Simulation Modeling</a></li>
-                            <li><a href="#">Facilities Planning and Design</a></li>
-                            <li><a href="#">Optimization Techniques</a></li>
-                            <li><a href="#">Financial Management</a></li>
-                            <li><a href="#">Professional Ethics</a></li>
-                            <li><a href="#">Simulation Lab</a></li>
-                            <li><a href="#">Facility Design Lab</a></li>
-                            <li><a href="#">Mini Project</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 7</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Project Management</a></li>
-                            <li><a href="#">Lean Manufacturing</a></li>
-                            <li><a href="#">Total Quality Management</a></li>
-                            <li><a href="#">Elective I</a></li>
-                            <li><a href="#">Elective II</a></li>
-                            <li><a href="#">Project Management Lab</a></li>
-                            <li><a href="#">Industrial Management Lab</a></li>
-                            <li><a href="#">Project Phase I</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 8</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Industrial Safety</a></li>
-                            <li><a href="#">Enterprise Resource Planning</a></li>
-                            <li><a href="#">Elective III</a></li>
-                            <li><a href="#">Elective IV</a></li>
-                            <li><a href="#">Project Work</a></li>
-                            <li><a href="#">Seminar</a></li>
-                            <li><a href="#">Industrial Training II</a></li>
-                            <li><a href="#">Comprehensive Viva-Voce</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,3 +236,4 @@
     <script src="../../script.js"></script>
 </body>
 </html> 
+

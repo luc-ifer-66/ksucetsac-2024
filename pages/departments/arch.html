@@ -27,6 +27,44 @@
             scrollbar-width: thin;
             scrollbar-color: #0066cc transparent;
         }
+        
+        /* Mobile semester cards layout */
+        @media (max-width: 768px) {
+            .semester-grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 1rem;
+            }
+            
+            .semester-card {
+                width: 100%;
+                height: auto !important;
+                min-height: 300px;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        /* Coming soon styling */
+        .coming-soon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .coming-soon i {
+            font-size: 2rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon p {
+            font-size: 1.2rem;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -104,96 +142,60 @@
                 <div class="semester-card">
                     <h2>Semester 3</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Architectural Design III</a></li>
-                            <li><a href="#">Building Materials and Construction III</a></li>
-                            <li><a href="#">History of Architecture III</a></li>
-                            <li><a href="#">Climatology and Environmental Science</a></li>
-                            <li><a href="#">Structural Mechanics</a></li>
-                            <li><a href="#">Building Construction Drawing</a></li>
-                            <li><a href="#">Climatology Lab</a></li>
-                            <li><a href="#">Environmental Science Lab</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 4</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Architectural Design IV</a></li>
-                            <li><a href="#">Building Materials and Construction IV</a></li>
-                            <li><a href="#">Contemporary Architecture</a></li>
-                            <li><a href="#">Building Services I</a></li>
-                            <li><a href="#">Theory of Structures</a></li>
-                            <li><a href="#">Architectural Acoustics</a></li>
-                            <li><a href="#">Building Services Drawing</a></li>
-                            <li><a href="#">Structure Models Lab</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 5</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Architectural Design V</a></li>
-                            <li><a href="#">Urban Design</a></li>
-                            <li><a href="#">Landscape Architecture</a></li>
-                            <li><a href="#">Building Services II</a></li>
-                            <li><a href="#">Design of Structures</a></li>
-                            <li><a href="#">Urban Planning</a></li>
-                            <li><a href="#">Landscape Design Lab</a></li>
-                            <li><a href="#">Urban Design Studio</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 6</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Architectural Design VI</a></li>
-                            <li><a href="#">Urban Planning</a></li>
-                            <li><a href="#">Working Drawings</a></li>
-                            <li><a href="#">Building Services III</a></li>
-                            <li><a href="#">Professional Ethics</a></li>
-                            <li><a href="#">Construction Management</a></li>
-                            <li><a href="#">Working Drawing Studio</a></li>
-                            <li><a href="#">Architectural Conservation</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 7</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Architectural Design VII</a></li>
-                            <li><a href="#">Housing</a></li>
-                            <li><a href="#">Specification and Estimation</a></li>
-                            <li><a href="#">Elective I</a></li>
-                            <li><a href="#">Elective II</a></li>
-                            <li><a href="#">Housing Studio</a></li>
-                            <li><a href="#">Practical Training</a></li>
-                            <li><a href="#">Research Methods</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="semester-card">
                     <h2>Semester 8</h2>
                     <div class="scrollable-list">
-                        <ul class="textbook-list">
-                            <li><a href="#">Architectural Design VIII</a></li>
-                            <li><a href="#">Professional Practice</a></li>
-                            <li><a href="#">Advanced Construction Techniques</a></li>
-                            <li><a href="#">Elective III</a></li>
-                            <li><a href="#">Thesis Project</a></li>
-                            <li><a href="#">Construction Techniques Lab</a></li>
-                            <li><a href="#">Thesis Preparation</a></li>
-                            <li><a href="#">Professional Practice Seminar</a></li>
-                        </ul>
+                        <div class="coming-soon">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Coming soon</p>
+                        </div>
                     </div>
                 </div>
             </div>

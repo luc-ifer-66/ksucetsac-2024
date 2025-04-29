@@ -11,32 +11,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="pages.css">
     <style>
-        .coming-soon {
-            text-align: center;
+        .department-selector {
             max-width: 800px;
-            margin: 5rem auto;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .department-select {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background-color: var(--card-background);
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all var(--transition-speed);
+        }
+
+        .department-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .syllabus-container {
+            max-width: 1000px;
+            margin: 2rem auto;
             padding: 2rem;
             background-color: var(--card-background);
             border-radius: var(--border-radius);
             box-shadow: 0 4px 8px var(--shadow-color);
+            display: none;
         }
-        
-        .coming-soon h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+
+        .syllabus-container.active {
+            display: block;
+        }
+
+        .syllabus-header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .syllabus-header h2 {
             color: var(--primary-color);
+            margin: 0;
         }
-        
-        .coming-soon p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
+
+        .pdf-viewer {
+            width: 100%;
+            height: 110vh;
+            border: none;
+            border-radius: var(--border-radius);
+            background-color: var(--card-background);
         }
-        
-        .coming-soon .icon {
-            font-size: 4rem;
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
+
+        @media (max-width: 768px) {
+            .pdf-viewer {
+                height: 80vh;
+            }
         }
     </style>
 </head>
@@ -78,13 +111,21 @@
             <p>Department-wise syllabus for the 2024 scheme</p>
         </section>
 
-        <div class="coming-soon">
-            <div class="icon">
-                <i class="fas fa-tools"></i>
-            </div>
-            <h2>Coming Soon</h2>
-            <p>We are currently updating the syllabus section with the latest information from KSU 2024 scheme. The detailed department-wise syllabus will be available here shortly.</p>
-            <p>Please check back later for complete information on course structures, credit distribution, and subject details for all semesters.</p>
+        <div class="department-selector">
+            <select id="departmentSelect" class="department-select">
+                <option value="">Select Department</option>
+                <option value="aei">Applied Electronics and Instrumentation Engineering</option>
+                <option value="cse">Computer Science and Engineering</option>
+                <option value="eee">Electrical and Electronics Engineering</option>
+                <option value="ecp">Electrical and Computer Engineering</option>
+                <option value="ece">Electronics and Communication Engineering</option>
+                <option value="ie">Industrial Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+            </select>
+        </div>
+
+        <div id="syllabusContainer" class="syllabus-container">
+            <iframe id="pdfViewer" class="pdf-viewer" title="Syllabus PDF"></iframe>
         </div>
     </main>
 
@@ -93,5 +134,35 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const departmentSelect = document.getElementById('departmentSelect');
+            const syllabusContainer = document.getElementById('syllabusContainer');
+            const pdfViewer = document.getElementById('pdfViewer');
+
+            const syllabusFiles = {
+                'aei': '../files/Applied Electronics and Instrumentation Engineering .pdf',
+                'cse': '../files/Computer Science and Engg.pdf',
+                'eee': '../files/Electrical and Electronics Engineering.pdf',
+                'ecp': '../files/Electrical and Computer Engineering.pdf',
+                'ece': '../files/Electronics and Communication Engineering.pdf',
+                'ie': '../files/Industrial Engineering.pdf',
+                'me': '../files/Mechanical Engineering.pdf'
+            };
+
+            departmentSelect.addEventListener('change', function() {
+                const selectedDepartment = this.value;
+                
+                if (selectedDepartment) {
+                    syllabusContainer.classList.add('active');
+                    const pdfUrl = syllabusFiles[selectedDepartment];
+                    pdfViewer.src = pdfUrl;
+                } else {
+                    syllabusContainer.classList.remove('active');
+                    pdfViewer.src = '';
+                }
+            });
+        });
+    </script>
 </body>
 </html> 

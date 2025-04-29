@@ -56,8 +56,14 @@
         
         .subject-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 1.5rem;
+        }
+        
+        @media (max-width: 1600px) {
+            .subject-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
         
         @media (max-width: 1200px) {
@@ -186,7 +192,25 @@
                 width: 100%;
                 margin-bottom: 1rem;
             }
-        }</style>
+        }
+
+        /* Semester 2 specific grid */
+        #sem2 .subject-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        @media (max-width: 1200px) {
+            #sem2 .subject-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #sem2 .subject-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -254,50 +278,9 @@
             <div class="semester-content active" id="sem1">
                 <div class="subject-grid">
                     <div class="subject-card">
-                        <div class="subject-header">Engineering Mathematics I</div>
+                        <div class="subject-header">Coming Soon</div>
                         <div class="subject-content">
-                            <ul class="paper-list">
-                                <li><a href="#">2023 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2023 Supplementary <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Supplementary <i class="fas fa-download"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="subject-card">
-                        <div class="subject-header">Engineering Physics</div>
-                        <div class="subject-content">
-                            <ul class="paper-list">
-                                <li><a href="#">2023 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2023 Supplementary <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Supplementary <i class="fas fa-download"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="subject-card">
-                        <div class="subject-header">Engineering Chemistry</div>
-                        <div class="subject-content">
-                            <ul class="paper-list">
-                                <li><a href="#">2023 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2023 Supplementary <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Supplementary <i class="fas fa-download"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="subject-card">
-                        <div class="subject-header">Engineering Graphics</div>
-                        <div class="subject-content">
-                            <ul class="paper-list">
-                                <li><a href="#">2023 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2023 Supplementary <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Supplementary <i class="fas fa-download"></i></a></li>
-                            </ul>
+                            <p>Will be updated after S2 Exams</p>
                         </div>
                     </div>
                 </div>
@@ -307,92 +290,81 @@
             <div class="semester-content" id="sem2">
                 <div class="subject-grid">
                     <div class="subject-card">
-                        <div class="subject-header">Engineering Mathematics II</div>
+                        <div class="subject-header">Mathematics</div>
                         <div class="subject-content">
                             <ul class="paper-list">
-                                <li><a href="#">2023 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2023 Supplementary <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Supplementary <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 1 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 2 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Semester Paper <i class="fas fa-download"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    
+                    <div class="subject-card">
+                        <div class="subject-header">Chemistry</div>
+                        <div class="subject-content">
+                            <ul class="paper-list">
+                                <li><a href="#">Series 1 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 2 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Semester Paper <i class="fas fa-download"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">Foundations of Computing</div>
+                        <div class="subject-content">
+                            <ul class="paper-list">
+                                <li><a href="#">Series 1 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 2 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Semester Paper <i class="fas fa-download"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="subject-card">
                         <div class="subject-header">Programming in C</div>
                         <div class="subject-content">
                             <ul class="paper-list">
-                                <li><a href="#">2023 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2023 Supplementary <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Supplementary <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 1 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 2 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Semester Paper <i class="fas fa-download"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    
                     <div class="subject-card">
-                        <div class="subject-header">Environmental Studies</div>
+                        <div class="subject-header">Engineering Entrepreneurship</div>
                         <div class="subject-content">
                             <ul class="paper-list">
-                                <li><a href="#">2023 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2023 Supplementary <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Supplementary <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 1 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 2 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Semester Paper <i class="fas fa-download"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    
                     <div class="subject-card">
-                        <div class="subject-header">Basic Electrical Engineering</div>
+                        <div class="subject-header">Engineering Mathematics</div>
+                        <ul class="subject-links">
+                            <li><a href="#">Engineering Mathematics</a></li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">Discrete Mathematics (Core)</div>
                         <div class="subject-content">
                             <ul class="paper-list">
-                                <li><a href="#">2023 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2023 Supplementary <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Regular <i class="fas fa-download"></i></a></li>
-                                <li><a href="#">2022 Supplementary <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 1 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Series 2 <i class="fas fa-download"></i></a></li>
+                                <li><a href="#">Semester Paper <i class="fas fa-download"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Add placeholders for semesters 3-8, similar to above -->
+            <!-- Semester 3 Subjects -->
             <div class="semester-content" id="sem3">
                 <div class="subject-grid">
-                    <!-- Placeholder for semester 3 subjects -->
                     <div class="subject-card">
-                        <div class="subject-header">Linear Algebra & Complex Analysis</div>
+                        <div class="subject-header">Coming Soon</div>
                         <div class="subject-content">
-                            <ul class="paper-list">
-                                <li><a href="#">Coming Soon <i class="fas fa-clock"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="subject-card">
-                        <div class="subject-header">Discrete Computational Structures</div>
-                        <div class="subject-content">
-                            <ul class="paper-list">
-                                <li><a href="#">Coming Soon <i class="fas fa-clock"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="subject-card">
-                        <div class="subject-header">Data Structures</div>
-                        <div class="subject-content">
-                            <ul class="paper-list">
-                                <li><a href="#">Coming Soon <i class="fas fa-clock"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="subject-card">
-                        <div class="subject-header">Digital System Design</div>
-                        <div class="subject-content">
-                            <ul class="paper-list">
-                                <li><a href="#">Coming Soon <i class="fas fa-clock"></i></a></li>
-                            </ul>
+                            <p>Question papers for this semester will be available soon.</p>
                         </div>
                     </div>
                 </div>

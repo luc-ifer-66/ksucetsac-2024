@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syllabus - KSU 2024 Scheme</title>
+    <title>Syllabus - KSU Student Assist Cell</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -113,14 +113,10 @@
 
         <div class="department-selector">
             <select id="departmentSelect" class="department-select">
-                <option value="">Select Department</option>
-                <option value="aei">Applied Electronics and Instrumentation Engineering</option>
-                <option value="cse">Computer Science and Engineering</option>
-                <option value="eee">Electrical and Electronics Engineering</option>
-                <option value="ecp">Electrical and Computer Engineering</option>
-                <option value="ece">Electronics and Communication Engineering</option>
-                <option value="ie">Industrial Engineering</option>
-                <option value="me">Mechanical Engineering</option>
+                <option value="">Select Group</option>
+                <option value="groupa">Group A (CSE)</option>
+                <option value="groupb">Group B (AEI,ECE,EEE,EL)</option>
+                <option value="groupc">Group C (CE,IE,ME)</option>
             </select>
         </div>
 
@@ -141,13 +137,9 @@
             const pdfViewer = document.getElementById('pdfViewer');
 
             const syllabusFiles = {
-                'aei': '../files/Applied Electronics and Instrumentation Engineering .pdf',
-                'cse': '../files/Computer Science and Engg.pdf',
-                'eee': '../files/Electrical and Electronics Engineering.pdf',
-                'ecp': '../files/Electrical and Computer Engineering.pdf',
-                'ece': '../files/Electronics and Communication Engineering.pdf',
-                'ie': '../files/Industrial Engineering.pdf',
-                'me': '../files/Mechanical Engineering.pdf'
+                'groupb': '../files/groupb.pdf',
+                'groupa': '../files/groupa.pdf',
+                'groupc': '../files/groupc.pdf',
             };
 
             departmentSelect.addEventListener('change', function() {

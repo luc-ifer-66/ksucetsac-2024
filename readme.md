@@ -22,7 +22,7 @@ Contributions are welcome! If you have notes, question papers, or other resource
 
 ## To-Do
 
-1. Notes for Architecture
-2. Textbooks for all departments
-3. Lectures for all departments
-4. FAQ to help students gain information about the new scheme.
+- [ ] 1. Notes for Architecture
+- [ ] 2. Textbooks for all departments
+- [ ] 3. Lectures for all departments
+- [ ] 4. FAQ to help students gain information about the new scheme.

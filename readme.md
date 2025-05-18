@@ -1,4 +1,4 @@
-# KSU CET Student Asssit Cell 2024 Website
+# KSU CET Student Assist Cell 2024 Website
 
 Welcome to the KSU CET Student Assist Cell 2024 Website. This website contains educational resources for all departments of CET, that are in line with the KTU 2024 Scheme
 
